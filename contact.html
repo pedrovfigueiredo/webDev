@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Logon Informática - Contact</title>
+</head>
+
+<body>
+    <header>
+        <nav id="mainmenu"><a href="index.html">Home</a> | <a href="solutions.html">Solutions</a> | <b>Contact Us</b> | <a href="login.html">Login</a> </nav>
+    </header>
+
+    <main>
+        <h2>CONTACT US</h2>
+        <form>
+            <fieldset>
+                <input type="radio" name="userType" id="userType1" value="Individual">
+                <label for="userType1">Individual</label>
+                <input type="radio" name="userType" id="userType2" value="Corporation">
+                <label for="userType2">Corporation</label><br>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name"><br>
+
+                <label for="email">Email</label>
+                <input type="url" name="email" id="email" placeholder="Email"><br>
+
+                <label for="softwareCategories">Software Categories</label>
+                <select name="softwareCategories" id="softwareCategories" size="1">
+                    <option value="schools">Schools</option>
+                    <option value="companies">Companies</option>
+                    <option value="public_sec">Public Sector</option>
+                    <option value="sindicates">Sindicates</option>
+                    <option value="cemiteries">Cemiteries</option>
+                </select>
+                <br>
+
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" placeholder="Type your message here..."></textarea><br>
+
+                <input type="checkbox" name="termsOfUse" id="termsOfUse" >
+                <label for="termsOfUse">I accept the Terms of Use.</label><br>
+
+                <input type="checkbox" name="subscribeNews" id="subscribeNews" >
+                <label for="subscribeNews">I want to subscribe to Logon Informática's newsletter.</label><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <a href="login.html">Login</a>
+        <p>Logon Informática 2018<br>All rights reserved</p>
+    </footer>
+</body>
