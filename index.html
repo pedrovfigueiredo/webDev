@@ -4,78 +4,110 @@
 <head>
     <meta charset="utf-8">
     <title>Logon Informática - Home</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" title="normal">
+    <link rel="stylesheet" type="text/css" href="css/home.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="css/home_large.css" title="large">
 </head>
 
 <body>
     <header>
-        <nav id="mainmenu"><b>Home</b> | <a href="solutions.html">Solutions</a> | <a href="contact.html">Contact Us</a> | <a href="login.html">Login</a> </nav>
+
+        <div class="navigationBar">
+            <nav id="mainmenu">
+                <ul>
+                    <li><img src="media/logo.png" alt="Logon Informática's logo" width="100%"></li>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
     <main>
         <h2>HOME</h2>
-        <article>
+        <article id="intro">
             <h3>LOGON: MORE THAN 20 YEARS OF EXPERIENCE</h3>
-            <figure>
-                <img src="media/office.png"
-                 alt="Picture of Logon Informática's office"
-                 width="50%">
-                <figcaption>Our office</figcaption>
-            </figure>
-            <p>
-                <strong>Logon Informática</strong> is a software company founded in 1998 based in João Pessoa, Paraíba, Brazil. Our priority is developing softwares for our community which helps them live better lives.
-                Committed to providing the best customer support, there is no problem or doubt big enough that we can't solve.
-                Logon is formed by computer scientists and engineers that give their heart to develop the best applications as fast as possible and at a fair price.
-                By respecting our community and seeking new challenges every day, we continue this 20-year saga.
-            </p>
+            <div class="flex-container">
+                <div class="flex-box">
+                    <figure>
+                        <a href="media/office.png">
+                            <img src="media/office.png" alt="Picture of Logon Informática's office" width="100%">
+                        </a>
+                        <figcaption>Our office</figcaption>
+                    </figure>
+                </div>
+                <div class="flex-box">
+                    <p>
+                        <strong>Logon Informática</strong> is a software company founded in 1998 based in João Pessoa, Paraíba, Brazil. Our priority is developing softwares for our community which helps them live better lives. Committed to providing
+                        the best customer support, there is no problem or doubt big enough that we can't solve. Logon is formed by computer scientists and engineers that give their heart to develop the best applications as fast as possible and at a fair
+                        price. By respecting our community and seeking new challenges every day, we continue this 20-year saga.
+                    </p>
+                </div>
+            </div>
         </article>
 
         <article>
             <h3>AREAS OF ACTIVITY</h3>
-            <figure>
-                <img src="media/brazil_map.png"
-                 alt="Areas of Activity of Logon Informática."
-                 width="50%">
-            </figure>
-            <p>
-                Even though we are based in the beautiful João Pessoa, our software designs are expandable to many other regions not only in Brazil, but all over the world. We have remote employees in many brazilian cities and plan to go abroad.
-            </p>
+            <div class="flex-container">
+                <div class="flex-box">
+                    <figure id="activityArea">
+                        <a href="media/brazil_map.png">
+                            <img src="media/brazil_map.png" alt="Areas of Activity of Logon Informática." width="100%">
+                        </a>
+                    </figure>
+                </div>
+                <div class="flex-box">
+                    <p>
+                        Even though we are based in the beautiful <a href=#video-aside>João Pessoa</a>, our software designs are expandable to many other regions not only in Brazil, but all over the world. We have remote employees in many brazilian cities and plan to go abroad.
+                    </p>
+                </div>
+            </div>
         </article>
 
-        <article>
+        <article id="founders">
             <h3>FOUNDERS</h3>
-            <section>
-                <figure>
-                    <img src="media/flavio.png"
-                     alt="Picture of Flávio Villar, founder of Logon Informática."
-                     width="30%">
-                </figure>
-                <p>
-                    Flávio Villar is a computer scientist graduated in the Federal University of Paraíba, with more than 25 years of software development.
-                </p>
-            </section>
+            <div class="flex-container">
 
-            <section>
-                <figure>
-                    <img src="media/fernanda.png"
-                     alt="Picture of Fernanda Villar, founder of Logon Informática."
-                     width="30%">
-                </figure>
-                <p>
-                    Fernanda Villar is a computer scientist graduated in Federal University of Paraíba and specialist in Web Security for the same institution. Has more than 30 years of experience in software development and customer support.
-                </p>
-            </section>
+                <div class="flex-box">
+                    <section>
+                        <figure>
+                            <img src="media/flavio.png" alt="Picture of Flávio Villar, founder of Logon Informática." width="90%">
+                        </figure>
+                        <p>
+                            Flávio Villar is a computer scientist graduated in the Federal University of Paraíba, with more than 25 years of software development.
+                        </p>
+                    </section>
+                </div>
+                <div class="flex-box">
+                    <section>
+                        <figure>
+                            <img src="media/fernanda.png" alt="Picture of Fernanda Villar, founder of Logon Informática." width="88%">
+                        </figure>
+                        <p>
+                            Fernanda Villar is a computer scientist graduated in Federal University of Paraíba and specialist in Web Security for the same institution. Has more than 30 years of experience in software development and customer support.
+                        </p>
+                    </section>
+                </div>
+            </div>
         </article>
 
-        <article>
+        <aside id="video-aside">
             <h3>WHY BE BASED IN JOÃO PESSOA?</h3>
-            <iframe width="420" height="315"
-            src="https://www.youtube.com/embed/T0mwXbpMbZM?controls=1">
-            </iframe>
-        </article>
+            <video controls poster="media/video_placeholder.png" width="750">
+			<source src="media/video.mp4" type="video/mp4">
+			 <p>Your browser does not support HTML5 video</p>
+             <p><a href="media/video.mp4">You can download the video in mp4 format.</a></p>
+		    </video>
+        </aside>
+
     </main>
 
     <footer>
         <a href="login.html">Login</a>
+        <p><img src="media/logo.png" alt="Logon Informática's logo" width="100%"></p>
         <p>Logon Informática 2018<br>All rights reserved</p>
     </footer>
 </body>

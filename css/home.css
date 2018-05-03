@@ -1,0 +1,38 @@
+
+/* Intro block */
+
+main figure {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+}
+
+main article#founders img {
+    border-radius: 50%;
+}
+
+main figure#activityArea img {
+    border-radius: 10px;
+}
+
+/* End of Intro block */
+
+/* Founders Block */
+
+article#founders section {
+    margin: 8px;
+}
+
+article#founders {
+    border: default
+}
+
+/* End of Founders Block */
+
+aside {border:0;}
+
+video {
+    width: 100%;
+    height: auto;
+}

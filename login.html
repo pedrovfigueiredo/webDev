@@ -4,33 +4,57 @@
 <head>
     <meta charset="utf-8">
     <title>Logon Informática - Login</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" title="normal">
+    <link rel="stylesheet" type="text/css" href="css/login.css" title="normal">
 </head>
 
 <body>
     <header>
-        <nav id="mainmenu"><a href="index.html">Home</a> | <a href="solutions.html">Solutions</a> | <a href="contact.html">Contact Us</a> | <b>Login</b> </nav>
+
+        <div class="navigationBar">
+            <nav id="mainmenu">
+                <ul>
+                    <li><img src="media/logo.png" alt="Logon Informática's logo" width="100%"></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html"><b>Login</b></a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
     <main>
         <h2>LOGIN</h2>
-        <form>
-            <fieldset>
-                <label for="username">Username:</label><br>
-                <input type="text" name="username" id="username" placeholder="Username"><br>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <div class="row">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" placeholder="Username" required>
+                    </div>
 
-                <label for="password">Password:</label><br>
-                <input type="text" name="password" id="password" placeholder="Password"><br>
+                    <div class="row">
+                        <label for="password">Password:</label>
+                        <input type="text" name="password" id="password" placeholder="Password" required>
+                    </div>
 
-                <input type="checkbox" name="rememberMe" id="rememberMe" >
-                <label for="rememberMe">Remember me</label><br>
-
-                <input type="submit" value="Login">
-            </fieldset>
-        </form>
+                    <div class="row">
+                        <input type="checkbox" name="rememberMe" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Login">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </main>
 
     <footer>
         <b>Login</b>
+        <p><img src="media/logo.png" alt="Logon Informática's logo" width="100%"></p>
         <p>Logon Informática 2018<br>All rights reserved</p>
     </footer>
 </body>
