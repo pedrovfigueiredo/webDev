@@ -1,3 +1,4 @@
+@import url('base.css');
 
 /* Intro block */
 
@@ -24,8 +25,8 @@ article#founders section {
     margin: 8px;
 }
 
-article#founders {
-    border: default
+article#founders section{
+    text-align: center;
 }
 
 /* End of Founders Block */
@@ -35,4 +36,12 @@ aside {border:0;}
 video {
     width: 100%;
     height: auto;
+}
+
+.img90{
+    width: 90%;
+}
+
+.img88{
+    width: 88%;
 }

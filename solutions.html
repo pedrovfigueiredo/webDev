@@ -4,34 +4,45 @@
 <head>
     <meta charset="utf-8">
     <title>Logon Informática - Solutions</title>
-    <link rel="stylesheet" type="text/css" href="css/base.css" title="normal">
     <link rel="stylesheet" type="text/css" href="css/solutions.css" title="normal">
+    <link rel="stylesheet" type="text/css" href="css/solutions_hc.css" title="high_contrast">
+    <script src="scripts/highcontrastChanger.js"></script>
 </head>
 
 <body>
+    <nav class="screenreader">
+	       <a href="#content">Skip to Main content</a>
+    </nav>
     <header>
-
         <div class="navigationBar">
             <nav id="mainmenu">
                 <ul>
-                    <li><img src="media/logo.png" alt="Logon Informática's logo" width="100%"></li>
+                    <li><img class="logo" src="media/logo.png" alt="Logon Informática's logo"></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="solutions.html"><b>Solutions</b></a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="login.html">Login</a></li>
+                    <li>
+                        <a id="high_contrast_button" href="#" onclick="setActiveStyleSheet('high_contrast'); return false;">
+                            <img class="img100" src="media/contrast_icon.png" alt="High contrast mode button">
+                        </a>
+                        <a id="normal_button" href="#" onclick="setActiveStyleSheet('normal'); return false;">
+                            <img class="img100" src="media/contrast_icon.png" alt="Normal mode button">
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
 
     </header>
 
-    <main>
+    <main id="content">
         <h2>SOLUTIONS</h2>
 
         <article>
             <h3 id="schools">SCHOOLS</h3>
 
-            <table summary="Solutions designed for schools.">
+            <table>
                 <caption>Schools</caption>
                 <tr>
                     <th>Name</th>
@@ -39,12 +50,12 @@
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td><a href="http://athenaweb.com.br">Athena<a></td>
+                    <td><a href="http://athenaweb.com.br">Athena</a></td>
                     <td>Desktop</td>
                     <td>Schools management system</td>
                 </tr>
                 <tr>
-                    <td><a href="http://athenaweb.com.br">Athena<a></td>
+                    <td><a href="http://athenaweb.com.br">Athena</a></td>
                     <td>Web</td>
                     <td>Schools management system</td>
                 </tr>
@@ -78,7 +89,7 @@
         <article>
             <h3 id="companies">COMPANIES</h3>
 
-            <table summary="Solutions designed for companies.">
+            <table>
                 <caption>Companies</caption>
                 <tr>
                     <th>Name</th>
@@ -98,7 +109,7 @@
         <article>
             <h3 id="public_sec">PUBLIC SECTOR</h3>
 
-            <table summary="Solutions designed for public sector companies.">
+            <table>
                 <caption>Public Sector</caption>
                 <tr>
                     <th>Name</th>
@@ -123,7 +134,7 @@
         <article>
             <h3 id="sindicates">SINDICATES</h3>
 
-            <table summary="Solutions designed for sindicates.">
+            <table>
                 <caption>Sindicates</caption>
                 <tr>
                     <th>Name</th>
@@ -141,7 +152,7 @@
         <article>
             <h3 id="cemiteries">CEMITERIES</h3>
 
-            <table summary="Solutions designed for cemiteries.">
+            <table>
                 <caption>Cemiteries</caption>
                 <tr>
                     <th>Name</th>
@@ -160,7 +171,7 @@
 
     <footer>
         <a href="login.html">Login</a>
-        <p><img src="media/logo.png" alt="Logon Informática's logo" width="100%"></p>
+        <p><img class="logo" src="media/logo.png" alt="Logon Informática's logo"></p>
         <p>Logon Informática 2018<br>All rights reserved</p>
     </footer>
 </body>

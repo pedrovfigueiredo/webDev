@@ -4,28 +4,39 @@
 <head>
     <meta charset="utf-8">
     <title>Logon Informática - Contact</title>
-    <link rel="stylesheet" type="text/css" href="css/base.css" title="normal">
     <link rel="stylesheet" type="text/css" href="css/contact.css" title="normal">
+    <link rel="stylesheet" type="text/css" href="css/contact_hc.css" title="high_contrast">
+    <script src="scripts/highcontrastChanger.js"></script>
 </head>
 
 <body>
+    <nav class="screenreader">
+	       <a href="#content">Skip to Main content</a>
+    </nav>
     <header>
-
         <div class="navigationBar">
             <nav id="mainmenu">
                 <ul>
-                    <li><img src="media/logo.png" alt="Logon Informática's logo" width="100%"></li>
+                    <li><img class="logo" src="media/logo.png" alt="Logon Informática's logo"></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="solutions.html">Solutions</a></li>
                     <li><a href="contact.html"><b>Contact Us</b></a></li>
                     <li><a href="login.html">Login</a></li>
+                    <li>
+                        <a id="high_contrast_button" href="#" onclick="setActiveStyleSheet('high_contrast'); return false;">
+                            <img class="img100" src="media/contrast_icon.png" alt="High contrast mode button">
+                        </a>
+                        <a id="normal_button" href="#" onclick="setActiveStyleSheet('normal'); return false;">
+                            <img class="img100" src="media/contrast_icon.png" alt="Normal mode button">
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
 
     </header>
 
-    <main>
+    <main id="content">
         <h2>CONTACT US</h2>
         <div class="container">
             <form action="mailto:pedro@elte.hu" method="post" enctype="text/plain">
@@ -100,7 +111,7 @@
 
     <footer>
         <a href="login.html">Login</a>
-        <p><img src="media/logo.png" alt="Logon Informática's logo" width="100%"></p>
+        <p><img class="logo" src="media/logo.png" alt="Logon Informática's logo"></p>
         <p>Logon Informática 2018<br>All rights reserved</p>
     </footer>
 </body>

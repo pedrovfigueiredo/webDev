@@ -1,60 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Logon Informática - Login</title>
-    <link rel="stylesheet" type="text/css" href="css/base.css" title="normal">
-    <link rel="stylesheet" type="text/css" href="css/login.css" title="normal">
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+       <title>Logon Informática - Login</title>
+       <link rel="stylesheet" type="text/css" href="css/login.css" title="normal"/>
+       <link rel="stylesheet" type="text/css" href="css/login_hc.css" title="high_contrast"/>
+       <script type="text/javascript" src="scripts/highcontrastChanger.js"></script>
 </head>
 
 <body>
-    <header>
+    <div class="screenreader">
+	       <a href="#main">Skip to Main content</a>
+    </div>
 
+    <div id="header">
         <div class="navigationBar">
-            <nav id="mainmenu">
+            <div id="mainmenu">
                 <ul>
-                    <li><img src="media/logo.png" alt="Logon Informática's logo" width="100%"></li>
+                    <li><img class="logo" src="media/logo.png" alt="Logon Informática's logo"/></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="solutions.html">Solutions</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="login.html"><b>Login</b></a></li>
+                    <li>
+                        <a id="high_contrast_button" href="#" onclick="setActiveStyleSheet('high_contrast'); return false;">
+                            <img class="img100" src="media/contrast_icon.png" alt="High contrast mode button"/>
+                        </a>
+                        <a id="normal_button" href="#" onclick="setActiveStyleSheet('normal'); return false;">
+                            <img class="img100" src="media/contrast_icon.png" alt="Normal mode button"/>
+                        </a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
 
-    </header>
-
-    <main>
+    </div>
+    <div id="main">
         <h2>LOGIN</h2>
         <div class="container">
-            <form>
+            <form action="mailto:pedro@elte.hu" method="post" enctype="text/plain">
                 <fieldset>
                     <div class="row">
                         <label for="username">Username:</label>
-                        <input type="text" name="username" id="username" placeholder="Username" required>
+                        <input type="text" name="username" id="username"/>
                     </div>
 
                     <div class="row">
                         <label for="password">Password:</label>
-                        <input type="text" name="password" id="password" placeholder="Password" required>
+                        <input type="text" name="password" id="password"/>
                     </div>
 
                     <div class="row">
-                        <input type="checkbox" name="rememberMe" id="rememberMe">
+                        <input type="checkbox" name="rememberMe" id="rememberMe"/>
                         <label for="rememberMe">Remember me</label>
                     </div>
                     <div class="row">
-                        <input type="submit" value="Login">
+                        <input type="submit" value="Login"/>
                     </div>
                 </fieldset>
             </form>
         </div>
-    </main>
+    </div>
 
-    <footer>
+    <div id="footer">
         <b>Login</b>
-        <p><img src="media/logo.png" alt="Logon Informática's logo" width="100%"></p>
-        <p>Logon Informática 2018<br>All rights reserved</p>
-    </footer>
+        <p><img class="logo" src="media/logo.png" alt="Logon Informática's logo"/></p>
+        <p>Logon Informática 2018<br/>All rights reserved</p>
+    </div>
 </body>
+
+</html>
